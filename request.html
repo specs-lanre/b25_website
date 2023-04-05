@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Luxury Events - Contact us</title>
+<title>Luxury Events - Request \FOrm</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -88,82 +88,72 @@ crossorigin="anonymous">
 
 <div class="container ">
 <div class="row p-5">
-<div class="col-md-6 p-2"> 
-<form>
-  <div class="mb-3">
-  <label for="FormControlInput1" 
-  class="form-label">First name</label>
-  <input type="text" 
-  class="form-control" 
-  id="FormControlInput1" 
-  placeholder="First name">
-</div>
-  
-   <div class="mb-3">
-  <label for="FormControlInput1" 
-  class="form-label">Last name</label>
-  <input type="text" 
-  class="form-control" 
-  id="FormControlInput1" 
-  placeholder="Last name">
-</div> 
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" 
-  class="form-control" id="exampleFormControlInput1" 
-  placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Details</label>
-  <textarea class="form-control"
-  id="exampleFormControlTextarea1" rows="3"></textarea>
+
+<div class="col-md-11 p-2 text-center"> 
+<form class="form" method="POST" action="">
+<div>
+<label for="firstname">First name</label>
+<input type="text" id="firstname" 
+name="firstname">
+
 </div>
 
-  <div class="mb-3">
-    <button type="submit"
-	class="btn btn-primary mb-3">
-	Send enquiry</button>
-  </div>
-  
-  
+<label for="lastname">Last name</label>
+<input type="text" id="lastname" 
+name="lastname">
+
+
+<label for="email">Email</label>
+<input type="text" id="email" 
+name="email">
+
+<label for="select">Request Option</label>
+<select name="request" id="request">
+<option value="event_management">Event management
+</option>
+
+<option value="event_hosting">Event Hosting
+</option>
+<option value="event_broadcast">Event Broadcast
+</option>
+<option value="event_training">Event Training
+</option>
+</select>
+
+<div >Booking Date</div>
+<label for="booking_date_from">From</label>
+<input type="date" name="booking_date_from" 
+id="booking_date_from">
+
+<label for="booking_date_to">To</label>
+<input type="date" name="booking_date_to"
+ id="booking_date_to">
+
+<div>Which specific services</div>
+<label for="livestream">livestream</label>
+<input type="checkbox" name="livestream" id="">
+
+<label for="planning">Planning</label>
+<input type="checkbox" name="planning" id="">
+
+<label for="management">Management</label>
+<input type="checkbox" name="management" id="">
+
+<label for="comment">Comment</label>
+<textarea id="comment" 
+name="comment" rows="5">
+
+</textarea>
+
+
+<input type="submit" value="Send Request">
+
+<!--
+<button class="btn btn-info">Another button</button>
+-->
+
 </form>
 </div>
-
-<div class="col-md-6 "> 
-<div class="fs-4 p-2">Contact us</div>
-<div class="p-2 fw-semibold">
-<div class="content">
-<div class="fs-4">
-<a > 
-<i class="bi bi-geo-fill"></i>
-<br>
- 27 Awolowo way Ikeja.
-</a>
-</div>
-
-
-<div class="fs-4">
-<a href="tel:+234 123456789">
-<i class="bi bi-telephone-plus"></i>
-<br>
-+234 123456789
-</a>
-</div>
-
-
-<div class="fs-4">
-<a href="mailto://info@luwxuryevents.com">
-<i class="bi bi-envelope-at-fill"></i>
-<br>
-info@luwxuryevents.com
-</a>
-</div>
-</div>
-
-</p>
-</div>
-</div>
-
 </div>
 </div>
 
